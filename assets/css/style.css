@@ -14,7 +14,32 @@
     background: linear-gradient(35deg, navy, lightblue );
 }
 
-.submit-button {
-    background-color: lightblue;
-    color: white;
+.form-col input {
+    justify-content: center;
+    width: 100%;
+}
+
+.form-col h2 {
+    text-align: center;
+}
+
+.btn-cont {
+    display: flex;
+    justify-content: center;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.table th {
+    text-align: center;
+}
+
+.results {
+    width: 100%;
 }
