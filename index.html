@@ -10,73 +10,83 @@
     </head>
 
     <body>
-        <div class="weather-header">
-            <header class="header-bar">
-                <h2>Weather Dashboard</h2>
-            </header>
-        </div>
-        <!--search and past results-->
+        <header>
+           <h1>Weather Dashboard</h1>
+        </header>
         <div class="container">
-            <div class="row justify-content-start">
-                <div class="col-3">
-                    <div class="form-col">
-                        <h2>Search for a City:</h2>
-                        <input type="text"> </br>
+            <div class="input-output-container">
+                <div class="row">
+                    <div class = "col-sm-4 col-md-4 col-lg-4">
+                        <div class="form-group">
+                            <h2 class="search-title">Search for a City</h2>
+                            <label for="usr">City:</label>
+                            <input type="text" class="form-control" id="usr"> 
+                        </div>
+                        <div class="btncontainer">  
+                            <button type="button" class="btn btn-primary" id="btn">Search</button> 
+                        </div>  
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class = "card">
+                                <h3>Past Searches</h3>
+                                <ol class="pastsearchescont" id ="past-searches">
+                                    
+                                </ol>
+                            </div>
+                        </div>  
                     </div>
-                    <div class="btn-cont">
-                        <button id="search-button" class="search-btn">Search</button>
-                    </div>
-                    <div>
-                        <div class="card">
-                            <h3>Past Searches</h3>
-                            <ol class="past-searches" id="past-searches">
-
-                            </ol>
+                    <div class = "col-sm-8 col-md-8 col-lg-8">
+                        <div class="row">
+                            <div class="col-sm-8 col-md-8 col-lg-8">
+                                <div class = "container">
+                                    <h2><div class="today-date">Right Now:</div>
+                                    <table class="table table-bordered">
+                                        <thead class = "table-light">
+                                        <tr>    
+                                            <th scope="col">City</th>
+                                            <th scope ="col">Temperature (F)</th>
+                                            <th scope="col">Wind (mph)</th>
+                                            <th scope="col">Humidity</th>
+                                            <th scope="col">Icon</th>
+                                        </h2>
+                                        </tr>
+                                        </thead>
+                                        <tbody class ="table-body" id="table-body">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-8 col-md-8 col-lg-8">
+                                <div class = "container">
+                                    <h5>5 Day Forecast:
+                                    <table class="table table-bordered">
+                                        <thead class = "table-light">
+                                        <tr>
+                                            <th scope ="col"><div class="today-date2">Today</div></th>
+                                            <th scope="col"><div class="date-2">date2</div></th>
+                                            <th scope="col"><div class="date-3">date3</div></th>
+                                            <th scope="col"><div class="date-4">date4</div></th>
+                                            <th scope="col"><div class="date-5">date5</div></th>
+                                        </h5>
+                                        </tr>
+                                        </thead>
+                                        <tbody class="table-body" id="table-body2">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                   
+                </div>
+                
+                <div class="row">
+                    
                 </div>
             </div>
-               <!-- weather results-->
-            <div class="results">
-                <div class="row justify-content-center">
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                        <div class="container">
-                            <h2><div>Currently:</div></h2>
-                            <h3>
-                                <table class="table table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">City</th>
-                                        <th scope="col">Temperature (F)</th>
-                                        <th scope="col">Wind (mph)</th>
-                                        <th scope="col">Humidity</th>
-                                        <th scope="col">Icon</th>
-                                    </h3>
-                                    </tr>
-                                </thead>
-                                </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-6">
-                        <div class="container">
-                            <h2>5 Day Forecast:</h2>
-                            <h3><table class="table table-bordered">
-                                <thead>
-                                    <th scope="col"><div class="todays-date2">Today</div></th>
-                                    <th scope="col"><div class="day-2">Tomorrow</div></th>
-                                    <th scope="col"><div class="day-3">day 3</div></th>
-                                    <th scope="col"><div class="day-4">day 4</div></th>
-                                    <th scope="col"><div class="day-5">day 5</div></th>
-                                </thead>
-                            </table> </h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="assets\js\script.js"></script>   
     </body>
-    <script src="./assets/js/script.js"></script>
-</html>
+    </html>
